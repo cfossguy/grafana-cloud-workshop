@@ -1,0 +1,21 @@
+# exclude everything except directory foo/bar
+/data/**
+.idea/**
+**/.idea/**
+**/.DS_Store
+
+# exclude local deploy configuration files and grafana-agent files that contain secrets
+**/*.zip
+**/*.tgz
+**/.terraform/**
+/**/secret.tfvars
+/**/terraform.tfstate
+/**/terraform.tfstate.backup
+/**/.terraform.lock.hcl
+/**/.config/**
+/**/.env
+/**/*.jwt
+/**/vendor/**
+/**/__pycache__/**
+/**/node_modules/**
+/solr/.terraform.tfstate.lock.info
