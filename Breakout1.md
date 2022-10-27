@@ -6,6 +6,7 @@
 
 ### Create Dashboard
 1. [Sign in](https://grafana.com/auth/sign-in) to Grafana Cloud. 
+![Sign In](./screenshots/grafana_sign_in.png)
 2. Create a new folder named ```SRE Workshop```
 ![alt text](./screenshots/grafana_new_folder.png)
 3. Create new dashboard
