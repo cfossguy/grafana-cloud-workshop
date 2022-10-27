@@ -4,14 +4,23 @@
 
 ![Done #1](./screenshots/grafana_red.png)
 
-### Create Dashboard
-1. [Sign in](https://grafana.com/auth/sign-in) to Grafana Cloud. 
+### Step #1
+[Sign in](https://grafana.com/auth/sign-in) to Grafana Cloud. 
 ![Sign In](./screenshots/grafana_sign_in.png)
-2. Create a new folder named ```SRE Workshop```
+
+### Step #2
+Create a new folder named ```SRE Workshop```
 ![alt text](./screenshots/grafana_new_folder.png)
-3. Create new dashboard
+
+### Step #3
+Create new dashboard named ```RED - Test```
 ![alt text](./screenshots/grafana_new_dashboard.png)
-4. Add a new panel named ```Requests Per Second```
+
+### Step #4
+Add a new panel named ```Requests Per Second```
+
+### Step #5
+TODO
 
 #### Useful Documentation Links
 * [Grafana TestData DB](https://grafana.com/docs/grafana/latest/datasources/testdata/)
