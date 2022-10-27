@@ -6,14 +6,20 @@
 
 ### Step #1
 [Sign in](https://grafana.com/auth/sign-in) to Grafana Cloud. 
+
+---
 ![Sign In](./screenshots/grafana_sign_in.png)
 
 ### Step #2
-| Create a new folder named ```SRE Workshop``` |
-| ![alt text](./screenshots/grafana_new_folder.png) |
+Create a new folder named ```SRE Workshop``` 
+
+---
+![alt text](./screenshots/grafana_new_folder.png) 
 
 ### Step #3
 Create new dashboard named ```RED - Test```
+
+---
 ![alt text](./screenshots/grafana_new_dashboard.png)
 
 ### Step #4
