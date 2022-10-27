@@ -25,7 +25,7 @@ key application and system metrics.
 * Alerts
 
 ### Breakouts
-[Breakout 1](./Breakout1.md): Build simple RED dashboard row with [TestData DB](https://grafana.com/docs/grafana/latest/datasources/testdata/)
+[Breakout 1](./Breakout1.md): Build simple RED dashboard with [TestData DB](https://grafana.com/docs/grafana/latest/datasources/testdata/)
 
 ## Grafana Cloud Metrics(Prometheus)
 TODO
