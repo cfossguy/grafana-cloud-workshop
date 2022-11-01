@@ -107,7 +107,6 @@ Create a new panel named `Error Rate`
 ---
 ![alt text](error_rate2.png)
 
-
 #### Useful References 
 * [Grafana TestData DB](https://grafana.com/docs/grafana/latest/datasources/testdata/)
 * [Keyboard Shortcuts](https://grafana.com/docs/grafana/latest/dashboards/use-dashboards/#keyboard-shortcuts)
