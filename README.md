@@ -33,12 +33,15 @@ key application and system metrics.
 1. [Grafana Dashboard](breakout1/README.md): Build simple RED dashboard with test data
 2. [Grafana Dashboard](breakout2/README.md): Build simple RED dashboard with test data(CONTINUED)
 3. [Grafana Dashboard](todo): TODO
-4. [Prometheus Metrics](todo): TODO
-5. [Prometheus Metrics](todo): TODO
-6. [Loki Logs](todo): TODO
-7. [Loki Logs](todo): TODO
+
 ## Grafana Cloud Metrics(Prometheus)
 TODO
 
+4. [Prometheus Metrics](todo): TODO
+5. [Prometheus Metrics](todo): TODO
+
 ## Grafana Cloud Logs(Loki)
 TODO
+
+6. [Loki Logs](todo): TODO
+7. [Loki Logs](todo): TODO
