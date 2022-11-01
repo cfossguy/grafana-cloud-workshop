@@ -4,7 +4,7 @@ workshop as designed. You can obtain a free forever account
 [here](https://grafana.com/auth/sign-up/create-user?pg=hp&plcmt=hero-btn1&cta=create-free-account) 
 
 This workshop is targeted to site reliability engineers that want to become 
-Grafana literate with minimal effort. The labs should be completed
+Grafana literate with minimal effort. The breakouts should be completed
 in sequence and can be used as handy references once you understand the 
 key concepts.
 
@@ -30,8 +30,8 @@ key application and system metrics.
 * Variables
 
 ### Breakouts
-1. [Grafana Dashboard](breakout1/README.md): Build simple RED dashboard with test data
-2. [Grafana Dashboard](breakout2/README.md): Build simple RED dashboard with test data(CONTINUED)
+1. [Grafana Dashboard](breakout1/README.md): RED dashboard with test data - PART 1
+2. [Grafana Dashboard](breakout2/README.md): RED dashboard with test data - PART 2
 3. [Grafana Dashboard](todo): TODO
 
 ## Grafana Cloud Metrics(Prometheus)

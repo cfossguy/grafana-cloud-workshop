@@ -1,4 +1,4 @@
-## Breakout 2: Build simple RED dashboard with test data (CONTINUED)
+## Breakout 1: RED dashboard with test data - PART 2
 
 ### What Good Looks Like
 
