@@ -21,8 +21,13 @@ key application and system metrics.
 ### Key Concepts
 * Panels 
 * Queries
+* Expressions
+* Hot Keys
+* Transformations
 * Dashboard Settings
 * Alerts
+* Annotations
+* Variables
 
 ### Breakouts
 1. [Grafana Dashboard](breakout1/README.md): Build simple RED dashboard with test data
