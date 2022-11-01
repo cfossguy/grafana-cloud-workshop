@@ -107,17 +107,8 @@ Create a new panel named `Error Rate`
 ---
 ![alt text](error_rate2.png)
 
-### Step #7
-Create a new panel named `Duration`
 
-1. Click *Add panel* button -> *Add a new panel*
-2. Change *Panel options -> Title* to `Duration`
-3. Add 1 *TestData DB* datasource queries to the panel
-4. Select *Scenario -> CSV Metric Values* 
-5. Set A *String Input* = `659,414,925,1121,970,962,721,796,787,686` and *Alias* = `latency`
-6. Change *Panel options -> Graph styles -> Fill opacity* to `25`
-
-
-
-#### Useful Documentation Links
+#### Useful References 
 * [Grafana TestData DB](https://grafana.com/docs/grafana/latest/datasources/testdata/)
+* [Keyboard Shortcuts](https://grafana.com/docs/grafana/latest/dashboards/use-dashboards/#keyboard-shortcuts)
+* [Grafana University - Dashboards and Panels](https://university.grafana.com/learn/public/learning_plan/view/27/playlist-intro-to-visualizing-data-with-dashboards-and-panels)
