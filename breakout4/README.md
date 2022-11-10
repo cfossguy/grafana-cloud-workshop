@@ -98,7 +98,7 @@ Explore python API metrics data in Grafana.
 ![alt text](explore2.png) 
 
 ---
-![alt text](explore.png) 
+![alt text](explore.jpg) 
 
 #### Useful References 
 * [Grafana University - Introduction to metrics](https://university.grafana.com/learn/course/external/view/elearning/13/module-introduction-to-metrics)
