@@ -35,10 +35,19 @@ key application and system metrics.
 3. [Grafana Dashboard](todo): TODO
 
 ## Grafana Cloud Metrics(Prometheus)
-TODO
+**User Story** - As an SRE, I want to explore infrastructure metrics and response time metrics for a cloud native, 
+REST API. I also want to configure metrics recording rules and alerts rules. 
 
-4. [Prometheus Metrics](todo): TODO
-5. [Prometheus Metrics](todo): TODO
+### Key Concepts
+* Prometheus node_exporters
+* Hosted Prometheus Metrics Collector
+* k6 load test for REST API
+* PromQL builder in Grafana
+* Prometheus recording rules
+* Prometheus alerting rules
+
+4. [Prometheus Metrics](breakout4/README.md): Python REST API with node load metrics, response time metrics, recording rules and alert rules - PART 1
+5. [Prometheus Metrics](breakout5/README.md): Python REST API with node load metrics, response time metrics, recording rules and alert rules - PART 2
 
 ## Grafana Cloud Logs(Loki)
 TODO
