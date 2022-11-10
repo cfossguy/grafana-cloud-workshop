@@ -1,6 +1,7 @@
 ## Breakout 4: Prometheus Metrics
 
 ### What Good Looks Like
+Explore metrics data for a Python API that is running on your workstation. 
 
 ![alt text](explore.jpg) 
 
@@ -81,6 +82,23 @@ Install and set up a k6 OSS load test for the python API.
 ---
 ![alt text](k6_1.png) 
 
+### Step #4 
+Explore python API metrics data in Grafana.
+
+1. Open your grafana cloud browser tab and click *Explore* icon
+2. Select your grafana cloud prometheus datasource. It will have a name similar to *grafanacloud-yourusername-prom*
+3. In *A* click *Builder* button
+4. Set *A* *Metric* to `node_load1` and *Label filters* to `app=python_app`
+5. Click *Duplicate query* icon
+6. Set *B* *Metric* to `node_load5`
+7. Click *Run query* button 
+8. Change *Graph* from *Lines* to *Stacked lines*
+
+---
+![alt text](explore2.png) 
+
+---
+![alt text](explore.png) 
 
 #### Useful References 
 * [Grafana University - Introduction to metrics](https://university.grafana.com/learn/course/external/view/elearning/13/module-introduction-to-metrics)
