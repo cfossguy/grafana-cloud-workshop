@@ -46,8 +46,8 @@ REST API. I also want to configure metrics recording rules and alerts rules.
 * Prometheus recording rules
 * Prometheus alerting rules
 
-4. [Prometheus Metrics](breakout4/README.md): Python REST API with node load metrics, response time metrics, recording rules and alert rules - PART 1
-5. [Prometheus Metrics](breakout5/README.md): Python REST API with node load metrics, response time metrics, recording rules and alert rules - PART 2
+4. [Prometheus Metrics](breakout4/README.md): REST API with metrics, recording rules, and alert rules - PART 1
+5. [Prometheus Metrics](breakout5/README.md): REST API with metrics, recording rules, and alert rules - PART 2
 
 ## Grafana Cloud Logs(Loki)
 TODO

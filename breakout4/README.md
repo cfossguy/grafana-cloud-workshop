@@ -1,4 +1,4 @@
-## Breakout 4: Python REST API with node load metrics, response time metrics, recording rules and alert rules - PART 1
+## Breakout 4: REST API with metrics, recording rules, and alert rules - PART 1
 
 ### What Good Looks Like
 Explore metrics data for a Python API that is running on your workstation. 
