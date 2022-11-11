@@ -1,19 +1,17 @@
 logs:
   configs:
-    clients:
-    server:
-      http_listen_port: 0
-      grpc_listen_port: 0
-    client:
-      url: [LOGS_WRITE_CONFIG_COPY_PASTE]
+  - name: default
+    positions:
+      filename: /tmp/positions.yaml
     scrape_configs:
       - job_name: python_logs
         static_configs:
-          - targets:
-              - localhost
+          - targets: [localhost]
             labels:
-              job: varlogs
+              app: python_app
               __path__: [APP_LOG_PATH]
+    clients:
+      - url: [LOGS_WRITE_CONFIG_COPY_PASTE]
 metrics:
   global:
     [REMOTE_WRITE_CONFIG_COPY_PASTE]
