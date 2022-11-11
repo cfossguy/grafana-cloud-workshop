@@ -1,21 +1,19 @@
 logs:
-  server:
-    http_listen_port: 0
-    grpc_listen_port: 0
-  positions:
-    filename: /tmp/positions.yaml
-
-  client:
-    url: [LOGS_WRITE_CONFIG_COPY_PASTE]
-
-  scrape_configs:
-    - job_name: python_logs
-      static_configs:
-        - targets:
-            - localhost
-          labels:
-            job: varlogs
-            __path__: [APP_LOG_PATH]
+  configs:
+    clients:
+    server:
+      http_listen_port: 0
+      grpc_listen_port: 0
+    client:
+      url: [LOGS_WRITE_CONFIG_COPY_PASTE]
+    scrape_configs:
+      - job_name: python_logs
+        static_configs:
+          - targets:
+              - localhost
+            labels:
+              job: varlogs
+              __path__: [APP_LOG_PATH]
 metrics:
   global:
     [REMOTE_WRITE_CONFIG_COPY_PASTE]

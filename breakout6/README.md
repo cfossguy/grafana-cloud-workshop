@@ -3,7 +3,7 @@
 ### What Good Looks Like
 Explore logs data for a Python API that is running on your workstation. 
 
-![alt text](explore.jpg)
+![alt text](TODO)
 
 ### Step #1
 Make sure your python API is still running.
@@ -38,10 +38,7 @@ Setup Hosted Prometheus Logs Collector
 12. Paste your logs client url configuration information in `[LOGS_WRITE_CONFIG_COPY_PASTE]`
 13. Paste the full path to your *gcloud-workspace* folder in `[APP_LOG_PATH]`
 14. Save `agent-config.yaml`
-15. Open your grafana cloud browser tab
-16. Copy *Run the agent* command
-17. Open a terminal window in your *gcloud-workspace* folder
-18. Paste and execute *Run the agent* command
+16. Re-start the grafana agent
 
 ---
 ![alt text](integrations1.png) 
