@@ -9,11 +9,15 @@ from logfmter import Logfmter
 formatter = Logfmter(keys=["ts", "level"],mapping={"ts": "asctime", "level": "levelname"})
 #formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
-handler = logging.StreamHandler()
-handler.setFormatter(formatter)
+handler_stream = logging.StreamHandler()
+handler_stream.setFormatter(formatter)
 
-logging.basicConfig(handlers=[handler])
-logging.getLogger().setLevel(logging.DEBUG)
+handler_file = logging.FileHandler(filename='app.log')
+handler_file.setFormatter(formatter)
+
+logging.basicConfig(handlers=[handler_stream,handler_file])
+
+logging.getLogger().setLevel(logging.INFO)
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)

@@ -171,6 +171,13 @@ Add a new panel named `SLO - Python API`
 ---
 ![alt text](alerting10.png)
 
+### Step #10
+
+Re-arrange the panels so they look like this reference dashboard
+
+---
+![alt text](dashboard.png) 
+
 #### Useful References 
 * [Grafana University -  Configuring notifications with Grafana Alerting](https://university.grafana.com/learn/public/learning_plan/view/42/playlist-configuring-notifications-with-grafana-alerting)
 * [Introduction to histograms and heatmaps](https://grafana.com/docs/grafana/latest/fundamentals/intro-histograms/)
