@@ -13,7 +13,7 @@ handler = logging.StreamHandler()
 handler.setFormatter(formatter)
 
 logging.basicConfig(handlers=[handler])
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.DEBUG)
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
@@ -61,7 +61,8 @@ def payment():
 
 def delay_interval(sleep_time):
     elapsed_time = time.time() - start_time
-    new_delay_interval = (sleep_time / 10) * (elapsed_time / 60)
+    new_delay_interval = (sleep_time / 10) * (elapsed_time % 10)
+
     logging.debug(f"Delay interval increased to: {new_delay_interval}")
     return new_delay_interval
 
