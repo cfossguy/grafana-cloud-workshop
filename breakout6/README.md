@@ -1,9 +1,9 @@
-## Breakout 6: REST API with logs, recording rules, and alert rules 
+## Breakout 6: REST API with logs, recording rules, and alert rules - PART 1
 
 ### What Good Looks Like
 Explore logs data for a Python API that is running on your workstation. 
 
-![alt text](TODO)
+![alt text](dashboard.png)
 
 ### Step #1
 Make sure your python API is still running.
@@ -33,7 +33,7 @@ Setup Hosted Prometheus Logs Collector
 7. Copy your API key configuration
 8. Open a new terminal tab in your *grafana-workspace* folder 
 9. Download grafana agent logs config template `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout6/logs-agent-config.yaml`
-10. Append grafana agent logs config to your current *agent-config.yaml* file `cat >> ./agent-config.yaml ./logs-agent-config.yaml `
+10. Append grafana agent logs config to your current *agent-config.yaml* file `cat >> ./agent-config.yaml ./logs-agent-config.yaml`
 11. Open `agent-config.yaml` in your favorite yaml editor
 12. Paste your logs *client -> url* value in `[LOGS_WRITE_CONFIG_COPY_PASTE]`
 13. Paste the full path to your *grafana-workspace* folder in `[APP_LOG_PATH]`
@@ -61,15 +61,73 @@ Make sure your k6 load test is still running.
 ![alt text](k6_1.png) 
 
 ### Step #4 
-Explore python API logs data in Grafana.
+Explore python API log data in Grafana.
 
 1. Open your grafana cloud browser tab and click *Explore* icon
 2. Select your grafana cloud prometheus datasource. It will have a name similar to *grafanacloud-yourusername-logs*
-TODO
+3. In *A* click on the *Builder* button (if not already selected)
+4. In *A* set *Label filters* to `app` = `python_app`
+5. In *A* click *hint: add logfmt_parser()* button
+6. Click *Run query* button 
+7. In *Logs* scroll down to the first *red* color coded log entry 
+8. Expand log entry
+9. In *Log labels* click *Filter for value* icon 
+10. Scroll back up top of screen
+11. Notice that a new *Label filter expression* has been added to *A*
 
+---
+![alt text](explore1.png) 
+
+---
+![alt text](explore2.png) 
+
+---
+![alt text](explore3.png) 
+
+---
+![alt text](explore4.png) 
+
+### Step #5 
+Add user login count panel to the *REST - API* dashboard.
+
+1. Open a browser window to *REST - API* dashboard
+2. Duplicate `Node - Load1` panel. Hover mouse cursor on the panel and type `p d`
+3. Hover mouse over the duplicate panel and type `e`
+4. Change *Panel options -> Title* to `Logins`
+5. Select *Data source* `grafanacloud-yourstackname-logs`
+6. In *A* click *Builder* button
+7. In *A* set *Label filters* to `app` = `python_app`
+8. In *A* click *hint: add logfmt_parser()* button
+9. In *A* click *+ Operations -> Line filters -> Line contains*
+10. In *Line contains -> Text to find* type `logged in`
+11. In *A* click *+ Operations -> Range functions -> Count over time*
+12. Click *Transform* tab and select `Series to rows` transformation
+13. Change *Panel options -> Value options -> Calculation* to `Total`
+14. Change *Panel options -> Stat styles -> Color mode* to `None`
+15. Change *Panel options -> Stat styles -> Graph mode* to `None`
+16. Click *Apply*
+17. (Optional) Click *Save*
+
+---
+![alt text](panel1.png) 
+
+---
+![alt text](panel2.png)
+
+### Step #6 
+EXTRA CREDIT: Add user payment and balance count panels to the *REST - API* dashboard.
+
+1. HINT: The raw query for *Payments* panel is: `count_over_time({app="python_app"} |= "payment" | logfmt [$__interval])`
+2. HINT: The raw query for *Balance Inquiries* panel is: `count_over_time({app="python_app"} |= "balance" | logfmt [$__interval])`
+
+---
+![alt text](panel3.png) 
+
+---
+![alt text](panel4.png)
 
 #### Useful References - TODO
-* [Grafana University - Introduction to metrics](https://university.grafana.com/learn/course/external/view/elearning/13/module-introduction-to-metrics)
-* [Grafana Agent - documentation](https://grafana.com/docs/agent/latest/)
-* [Node Exporter - github](https://github.com/prometheus/node_exporter)
-* [K6 documentation](https://k6.io/docs/)
+* [Grafana University - Intro to querying Loki with LogQL](https://university.grafana.com/learn/public/learning_plan/view/19/playlist-intro-to-querying-loki-with-logql)
+* [Grafana University - Extracting text from log lines and creating labels using LogQL parsers](https://university.grafana.com/learn/public/learning_plan/view/16/playlist-extracting-text-from-log-lines-and-creating-labels-using-logql-parsers)
+* [Grafana University - Introduction to Logs](https://university.grafana.com/learn/course/external/view/elearning/21/module-introduction-to-logs)
+* [Grafana Agent - logs config documentation](https://grafana.com/docs/agent/latest/configuration/logs-config/)

@@ -9,6 +9,6 @@ logs:
           - targets: [localhost]
             labels:
               app: python_app
-              __path__: [APP_LOG_PATH]
+              __path__: [APP_LOG_PATH]/*.log
     clients:
       - url: [LOGS_WRITE_CONFIG_COPY_PASTE]
