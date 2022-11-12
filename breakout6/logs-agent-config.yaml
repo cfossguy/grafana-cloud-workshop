@@ -1,0 +1,14 @@
+logs:
+  configs:
+  - name: default
+    positions:
+      filename: /tmp/positions.yaml
+    scrape_configs:
+      - job_name: python_logs
+        static_configs:
+          - targets: [localhost]
+            labels:
+              app: python_app
+              __path__: [APP_LOG_PATH]
+    clients:
+      - url: [LOGS_WRITE_CONFIG_COPY_PASTE]

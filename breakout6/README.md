@@ -31,14 +31,14 @@ Setup Hosted Prometheus Logs Collector
 5. Type in *API Key name* `{yourusername}-workshop-logs`
 6. Click *Create API key* button
 7. Copy your API key configuration
-8. Open a new terminal tab in your *gcloud-workspace* folder
-9. Download grafana agent config template `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout6/agent-config.yaml`
-10. Open `agent-config.yaml` in your favorite yaml editor
-11. Paste your metrics API key configuration information in `[REMOTE_WRITE_CONFIG_COPY_PASTE]`
+8. Open a new terminal tab in your *gcloud-workspace* folder 
+9. Download grafana agent logs config template `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout6/logs-agent-config.yaml`
+10. Append grafana agent logs config to your current *agent-config.yaml* file `cat >> ./logs-agent-config.yaml ./agent-config.yaml`
+11. Open `agent-config.yaml` in your favorite yaml editor
 12. Paste your logs client url configuration information in `[LOGS_WRITE_CONFIG_COPY_PASTE]`
 13. Paste the full path to your *gcloud-workspace* folder in `[APP_LOG_PATH]`
 14. Save `agent-config.yaml`
-16. Re-start the grafana agent
+15. Re-start the grafana agent
 
 ---
 ![alt text](integrations1.png) 
@@ -51,7 +51,7 @@ Setup Hosted Prometheus Logs Collector
 
 
 ### Step #3 
-Make sure your k6 OSS load test is still running.
+Make sure your k6 load test is still running.
 
 1. Open a new terminal tab in your *gcloud-workspace* folder
 2. Change to `k6` directory 
