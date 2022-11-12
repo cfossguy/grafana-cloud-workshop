@@ -10,7 +10,7 @@ Start local instance of python API. This step requires a working python v3
 local installation.
 
 1. Open a terminal window
-2. Create a workspace folder `mkdir gcloud-workspace` and `cd gcloud-workspace`
+2. Create a workspace folder `mkdir grafana-workspace` and `cd grafana-workspace`
 3. Download python API by running `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout4/app.py`
 4. Install python API dependencies via this command `pip install Flask prometheus_flask_exporter logfmter`  
 5. Start the API by running `python app.py`
@@ -33,7 +33,7 @@ Setup Hosted Prometheus Metrics Collector
 4. Choose a method for forwarding metrics: *Via Grafana Agent*
 5. Choose your platform: *Select your OS* and *Architecture*
 6. Copy: *Download and install the binary for your OS* commands
-7. Open a new terminal tab in your *gcloud-workspace* folder 
+7. Open a new terminal tab in your *grafana-workspace* folder 
 8. Paste: *Download and install the binary for your OS* commands 
 15. Download grafana agent config template `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout4/agent-config.yaml`
 10. Open your grafana cloud browser tab 
@@ -46,7 +46,7 @@ Setup Hosted Prometheus Metrics Collector
 17. Save `agent-config.yaml`
 18. Open your grafana cloud browser tab
 19. Copy *Run the agent* command
-20. Open a terminal window in your *gcloud-workspace* folder
+20. Open a terminal window in your *grafana-workspace* folder
 21. Paste and execute *Run the agent* command
 
 ---
@@ -65,7 +65,7 @@ Setup Hosted Prometheus Metrics Collector
 ### Step #3 
 Install and set up a k6 OSS load test for the python API.
 
-1. Open a new terminal tab in your *gcloud-workspace* folder 
+1. Open a new terminal tab in your *grafana-workspace* folder 
 2. Download k6 client binary directly from [github](https://github.com/grafana/k6/releases) 
 - [Mac M1] you can run `curl -LO https://github.com/grafana/k6/releases/download/v0.41.0/k6-v0.41.0-macos-arm64.zip`
 - [Mac x86] you can run `curl -LO https://github.com/grafana/k6/releases/download/v0.41.0/k6-v0.41.0-macos-amd64.zip`

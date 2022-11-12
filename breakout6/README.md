@@ -9,7 +9,7 @@ Explore logs data for a Python API that is running on your workstation.
 Make sure your python API is still running.
 
 1. Open a terminal window
-2. Go to your workspace folder `cd gcloud-workspace`
+2. Go to your workspace folder `cd grafana-workspace`
 5. Start the API by running `python app.py`
 6. Open a browser window to test the endpoint [http://localhost:8080/payment](http://localhost:8080]/payment)
 7. Open a browser window to test the prometheus metrics endpoint [http://localhost:8080/metrics](http://localhost:8080]/metrics)
@@ -31,12 +31,12 @@ Setup Hosted Prometheus Logs Collector
 5. Type in *API Key name* `{yourusername}-workshop-logs`
 6. Click *Create API key* button
 7. Copy your API key configuration
-8. Open a new terminal tab in your *gcloud-workspace* folder 
+8. Open a new terminal tab in your *grafana-workspace* folder 
 9. Download grafana agent logs config template `curl -O https://raw.githubusercontent.com/cfossguy/grafana-cloud-workshop/main/breakout6/logs-agent-config.yaml`
 10. Append grafana agent logs config to your current *agent-config.yaml* file `cat >> ./logs-agent-config.yaml ./agent-config.yaml`
 11. Open `agent-config.yaml` in your favorite yaml editor
-12. Paste your logs client url configuration information in `[LOGS_WRITE_CONFIG_COPY_PASTE]`
-13. Paste the full path to your *gcloud-workspace* folder in `[APP_LOG_PATH]`
+12. Paste your logs *client -> url* value in `[LOGS_WRITE_CONFIG_COPY_PASTE]`
+13. Paste the full path to your *grafana-workspace* folder in `[APP_LOG_PATH]`
 14. Save `agent-config.yaml`
 15. Re-start the grafana agent
 
@@ -53,7 +53,7 @@ Setup Hosted Prometheus Logs Collector
 ### Step #3 
 Make sure your k6 load test is still running.
 
-1. Open a new terminal tab in your *gcloud-workspace* folder
+1. Open a new terminal tab in your *grafana-workspace* folder
 2. Change to `k6` directory 
 3. Run `./k6 run ./script.js`
 
