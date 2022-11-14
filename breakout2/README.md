@@ -53,7 +53,7 @@ Create a new panel named `Duration Stats`
 ![alt text](duration_stats2.png) 
 
 ### Step #3
-Create a new panel named `Duration Stats`
+Create a new panel named `Requests above Target`
 
 1. Duplicate `Duration` panel. Hover mouse cursor on the panel and type `p d`
 2. Hover mouse over the duplicate panel and type `e`
