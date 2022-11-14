@@ -102,7 +102,6 @@ Add user login count panel to the *REST - API* dashboard.
 10. In *Line contains -> Text to find* type `logged in`
 11. In *A* click *+ Operations -> Range functions -> Count over time*
 12. In *A* click *+ Operations -> Aggregations -> Sum* and set *Label* to `app`
-13. Click *Transform* tab and select `Series to rows` transformation
 14. Change *Panel options -> Value options -> Calculation* to `Total`
 15. Change *Panel options -> Stat styles -> Color mode* to `None`
 16. Change *Panel options -> Stat styles -> Graph mode* to `None`
@@ -110,13 +109,10 @@ Add user login count panel to the *REST - API* dashboard.
 18. (Optional) Click *Save*
 
 ---
-![alt text](panel1.png) 
-
----
-![alt text](panel2.png)
+![alt text](panel1.png)
 
 ### Step #6 
-EXTRA CREDIT: Add user payment and balance count panels to the *REST - API* dashboard.
+Add user payment and balance count panels to the *REST - API* dashboard.
 
 1. HINT: The raw query for *Payments* panel is: `sum by(app) (count_over_time({app="python_app"} |= "payment" | logfmt [$__interval]))`
 2. HINT: The raw query for *Balance Inquiries* panel is: `sum by(app) (count_over_time({app="python_app"} |= "balance" | logfmt [$__interval]))`
