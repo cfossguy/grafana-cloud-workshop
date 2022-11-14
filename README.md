@@ -1,12 +1,20 @@
 # Grafana Cloud Workshop
-You must have a valid Grafana Cloud account to complete this 
-workshop as designed. You can obtain a free forever account 
-[here](https://grafana.com/auth/sign-up/create-user?pg=hp&plcmt=hero-btn1&cta=create-free-account) 
-
 This workshop is targeted to site reliability engineers that want to become 
 Grafana literate with minimal effort. The breakouts should be completed
 in sequence and can be used as handy references once you understand the 
 key concepts.
+
+Most SREs are comfortable running go binaries and IaC via Python. You will *NOT* need to edit
+python or go code, but you will:
+
+1. Hand edit a YAML configuration file
+2. Execute a pre-built python/flask REST API locally
+3. Execute pre-built go binaries(k6 and grafana agent)
+
+## System Requirements
+1. A valid [Grafana Cloud](https://grafana.com/auth/sign-up/create-user?pg=hp&plcmt=hero-btn1&cta=create-free-account) account
+2. Ability to download and run go binaries. You will *NOT* need to compile go code from source.
+3. A fully functional [Python 3](https://www.python.org/downloads/) installation with pip package manager.
 
 ## Grafana Dashboards
 **User Story** - As an SRE, I want to build a new RED dashboard so that the application team has a customized view of 
@@ -50,7 +58,12 @@ REST API. I also want to configure metrics recording rules and alerts rules.
 5. [Prometheus Metrics](breakout5/README.md): REST API with metrics, recording rules, and alert rules - PART 2
 
 ## Grafana Cloud Logs(Loki)
-TODO
+**User Story** - As an SRE, I want to explore application logs for a cloud native, 
+REST API. I also want to configure logs -> metrics recording rules and alerts rules. 
 
-6. [Loki Logs](todo): TODO
+6. [Loki Logs](breakout6/README.md): REST API with logs, recording rules, and alert rules - PART 1
 7. [Loki Logs](todo): TODO
+
+### Key Concepts
+* Hosted Loki Logs Collector
+* LogQL builder in Grafana
