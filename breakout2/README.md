@@ -61,17 +61,18 @@ Create a new panel named `Requests above Target`
 4. Change Visualization to `Stat`
 5. Change *Panel options -> Value Options -> Calculation* to `Total`
 6. Change *Panel options -> Standard options -> Unit* to `Percent (0-100)`
-7. Change *Panel options -> Stat styles -> Color mode* to `Background`
-8. Change *Panel options -> Graph mode* to `None`
-9. Change *Panel options -> Thresholds -> RED* to `60`
-10. Click *+ Add threshold button* -> YELLOW to `30`
-11. Click *+ Expression* button and set *Operation* to `Reduce` and set *Function* to `Count` and set *Input* to `A`
-12. Click *+ Expression* button and set *Operation* to `Math` and set *Expression* to `($A > 700) / $B * 100`
-13. Click *Disable/enable query* button on query *A* 
-14. Click *Disable/enable query* button on query *B* 
-15. Click *Apply*
-18. Re-arrange and re-size `Requests above Target` panel below `Error Rate` panel
-19. Click *Save*
+7. Set *Standard options -> Color scheme* to `From thresholds (by value)`
+8. Change *Panel options -> Stat styles -> Color mode* to `Background`
+9. Change *Panel options -> Graph mode* to `None`
+10. Change *Panel options -> Thresholds -> RED* to `60`
+11. Click *+ Add threshold button* -> YELLOW to `30`
+12. Click *+ Expression* button and set *Operation* to `Reduce` and set *Function* to `Count` and set *Input* to `A`
+13. Click *+ Expression* button and set *Operation* to `Math` and set *Expression* to `($A > 700) / $B * 100`
+14. Click *Disable/enable query* button on query *A* 
+15. Click *Disable/enable query* button on query *B* 
+16. Click *Apply*
+17. Re-arrange and re-size `Requests above Target` panel below `Error Rate` panel
+18. Click *Save*
 
 ---
 ![alt text](requests_above_target1.png) 
@@ -123,7 +124,7 @@ Add an alert for *Requests Per Second*
 1. Hover mouse over the `Requests Per Second` panel and type `e`
 2. Click *Alert -> Create alert rule from this panel* button
 3. Edit *D Expression* with two conditions. `WHEN last() of B IS ABOVE 10 OR last() of C IS ABOVE 6`
-4. Change *Alert evaluation behavior -> Evaluate every* to `30s for 1m`
+4. Change *Alert evaluation behavior -> Evaluate every* to `1m for 2m`
 5. Change *Add details for your alert -> Rule name* to `Error Rate` 
 6. Change *Add details for your alert -> Group* to `red`
 7. Add two custom labels in *Notifications -> Custom Labels* `app=myapp` and `environment=production`

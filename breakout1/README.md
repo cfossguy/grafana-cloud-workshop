@@ -10,13 +10,35 @@
 ---
 ![Sign In](sign_in.png)
 
-### Step #2
+### Step #2 
+
+Create a datasource for the *TestData DB* plugin.
+
+1. Click *Configure -> Plugins*
+2. In *Search Grafana plugins* field type `Test`
+3. Click *TestData DB* box
+4. Click *Create a TestData DB data source
+5. Click *Save & test* button
+
+---
+![alt text](testdata1.png) 
+
+---
+![alt text](testdata2.png) 
+
+---
+![alt text](testdata3.png) 
+
+---
+![alt text](testdata4.png) 
+
+### Step #3
 Create a new folder named `SRE Workshop` 
 
 ---
 ![alt text](new_folder.png) 
 
-### Step #3
+### Step #4
 Create new dashboard named `RED - Test`
 
 ---
@@ -28,7 +50,7 @@ Create new dashboard named `RED - Test`
 ---
 ![alt text](new_dashboard3.png)
 
-### Step #4
+### Step #5
 Add a new panel named `Requests Per Second`
 
 ---
@@ -51,7 +73,7 @@ Add a new panel named `Requests Per Second`
 ---
 ![alt text](requests_per_second2.png)
 
-### Step #5
+### Step #6
 Create a new panel named `Requests by Type`
 
 1. Duplicate `Requests Per Second` panel. Hover mouse cursor on the panel and type `p d`
@@ -80,7 +102,7 @@ Create a new panel named `Requests by Type`
 ---
 ![alt text](requests_by_type4.png)
 
-### Step #6
+### Step #7
 Create a new panel named `Error Rate`
 
 1. Duplicate `Requests Per Second` panel. Hover mouse cursor on the panel and type `p d`
@@ -96,10 +118,11 @@ Create a new panel named `Error Rate`
 11. Click *Disable/enable query* for `A`, `B`, `C`, `D`, `E`, `F`
 12. Set *Color mode* to `Background`
 13. Set *Standard options* -> *Unit* to `Percent (0-100)`
-14. Add *Thresholds* `3` to `red`, `2` to `yellow`. 
-15. Click *Apply*
-16. Re-arrange and re-size panels on a single row
-17. Click *Save*
+14. Set *Standard options -> Color scheme* to `From thresholds (by value)`
+15. Add *Thresholds* `3` to `red`, `2` to `yellow`. 
+16. Click *Apply*
+17. Re-arrange and re-size panels on a single row
+18. Click *Save*
 
 ---
 ![alt text](error_rate1.png)
